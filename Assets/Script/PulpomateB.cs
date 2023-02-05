@@ -5,7 +5,7 @@ using UnityEngine;
 public class PulpomateB : MonoBehaviour
 {
     public float speed;
-    public float cura;
+    //public float cura;
     public Vector2 objetivo;
     private Vector2 posicion;
     public TimerS timer;
