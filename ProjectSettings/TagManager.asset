@@ -7,6 +7,7 @@ TagManager:
   - Tuneles
   - Enemy
   - Arbol
+  - Bullet
   layers:
   - Default
   - TransparentFX
