@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dc73165d2ae5e0f42bcb61065c86519d
+guid: 90295fd8729e7d54a975cc29d0ee5237
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 3000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: escarabajo_0
+      name: escarabajo 1_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 8568
-        height: 8609
+        x: 578
+        y: 4698
+        width: 3136
+        height: 3779
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd7b112469b3913409dc4c5e52432b3a
-      internalID: 331655538
+      spriteID: ef6c9ac82efe7a049815002440f4d647
+      internalID: -1050220771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo 1_2
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 780
+        width: 3376
+        height: 3295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7db00ec7298e846aae24f477fb7885
+      internalID: 627148760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo 1_3
+      rect:
+        serializedVersion: 2
+        x: 5005
+        y: 1394
+        width: 3107
+        height: 3148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bb36720a005a645bf59a552c349d92
+      internalID: 686007878
       vertices: []
       indices: 
       edges: []
@@ -148,7 +190,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      escarabajo_0: 331655538
+      escarabajo 1_14: 356089129
+      escarabajo 1_21: 869582694
+      escarabajo 1_6: 1149058537
+      escarabajo 1_15: 344266569
+      escarabajo 1_4: -459672862
+      escarabajo 1_17: 1424198553
+      escarabajo 1_7: -226677947
+      escarabajo 1_19: 1258563564
+      escarabajo 1_10: 299482353
+      escarabajo 1_20: 1715573394
+      escarabajo 1_8: -1457967676
+      escarabajo 1_11: 762413314
+      escarabajo 1_2: 627148760
+      escarabajo 1_12: 725674975
+      escarabajo 1_0: -1322010605
+      escarabajo 1_9: -822701740
+      escarabajo 1_16: -1269894706
+      escarabajo 1_1: -1050220771
+      escarabajo 1_3: 686007878
+      escarabajo 1_5: 816232625
+      escarabajo 1_13: 255325542
+      escarabajo 1_18: -384553460
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

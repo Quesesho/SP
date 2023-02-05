@@ -42,6 +42,15 @@ public class movep : MonoBehaviour
             moveI.y=0;
         }
         rbody.velocity = moveI * speed;
+        if (rbody.velocity.x > 0f){
+            gameObject.GetComponent<SpriteRenderer>().flipX=true;
+            gameObject.GetComponent<Animator>().SetBool("move",true);
+        }else if (rbody.velocity.x < 0f){
+            gameObject.GetComponent<SpriteRenderer>().flipX=false;
+            gameObject.GetComponent<Animator>().SetBool("move",true);
+        } else if (rbody.velocity.x == 0f){
+            gameObject.GetComponent<Animator>().SetBool("move",false);
+        }
         if(playerA.PlayerM.Fire.triggered) Attack();
 
         if (canChange)

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dc73165d2ae5e0f42bcb61065c86519d
+guid: d3c7e2ed037af17408622fda2d306da1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: escarabajo_0
+      name: "Dise\xF1o sin t\xEDtulo3_2"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 8568
-        height: 8609
+        x: 169
+        y: 572
+        width: 354
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd7b112469b3913409dc4c5e52432b3a
-      internalID: 331655538
+      spriteID: bc5564f2315b54747adece7a01aeb070
+      internalID: 1207705503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dise\xF1o sin t\xEDtulo3_3"
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 178
+        width: 410
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddbd963559c29c4ba255b8ce2013c86
+      internalID: 1835383192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dise\xF1o sin t\xEDtulo3_4"
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 178
+        width: 284
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29828a2f1e69e442b435929b2ecff43
+      internalID: 1177806935
       vertices: []
       indices: 
       edges: []
@@ -148,7 +190,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      escarabajo_0: 331655538
+      "Dise\xF1o sin t\xEDtulo3_0": -673982723
+      "Dise\xF1o sin t\xEDtulo3_3": 1835383192
+      "Dise\xF1o sin t\xEDtulo3_1": -461356244
+      "Dise\xF1o sin t\xEDtulo3_2": 1207705503
+      "Dise\xF1o sin t\xEDtulo3_4": 1177806935
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
