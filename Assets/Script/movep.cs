@@ -30,10 +30,10 @@ public class movep : MonoBehaviour
 
     private void Attack()
     {
-        if(canChange)
+        if(PlayerManager.instantiate.zone == 0) //Ataque distancia
             Debug.Log("Atacku the Otaku");
         else
-            Debug.Log("Tiradle piedras al otaku");
+            Debug.Log("Tiradle piedras al otaku"); //Ataque melee
     }
     void Update()
     {

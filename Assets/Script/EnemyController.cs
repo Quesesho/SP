@@ -123,4 +123,12 @@ public class EnemyController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Bullet"))
+        {
+            ReceiveDamage();
+        }
+    }
 }
