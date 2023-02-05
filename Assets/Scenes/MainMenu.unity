@@ -1830,8 +1830,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Persona \tAudio\nPersona \tArte\nPersona A\tArte\nPersona A\tProgramacion\nPersona
-    A\tProgramaci\xF3n"
+  m_text: "Ciao \t\t\t\t   Audio y animacion\nRosalinda Joaquin Alvarez \t   Dise\xF1adora
+    Grafica e \nAngel Santoyo villalobos\t\t    Arte y concepto Iustrador \t\nQuetzalcoatl
+    S\xE1nchez Cardoso\t    Programacion\nJorge Dan \t\t\t   Programaci\xF3n."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1858,12 +1859,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 30
+  m_fontSizeMin: 15
+  m_fontSizeMax: 25
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
