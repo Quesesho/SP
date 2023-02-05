@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     public float speedDamage=.3f;
     public GameObject targets;
     public int damageReceived = 1;
+    public bool isEscarabajo=true;
     
     Vector2 direction;
     float distance;
@@ -22,11 +23,15 @@ public class EnemyController : MonoBehaviour
     private void Start()
     {
         GetDestination();
+        if(isEscarabajo)
+            targets.transform.GetChild(0);
+        else
+        targets.transform.GetChild(1);
     }
     void Update()
     {
 
-        if (GetDistance() > 1)
+        if (GetDistance() > .5)
         {
             if (!destination.active)
                 GetDestination(PlayerManager.instantiate.gameObject);
@@ -34,7 +39,7 @@ public class EnemyController : MonoBehaviour
             
         }
             
-        if (GetDistance() > 1.2)
+        if (GetDistance() > .6)
             isAttack = true;
         else isAttack = false;
         Attack();

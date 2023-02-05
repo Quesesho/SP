@@ -25,7 +25,7 @@ public class PlayerManager : MonoBehaviour
     }
     public void IsDead()
     {
-        if (vida == 0)
+        if (vida <= 0)
         {
             isDead = true;
         }
