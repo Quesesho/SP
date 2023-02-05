@@ -36,6 +36,9 @@ public class movep : MonoBehaviour
     void Update()
     {
         moveI = playerA.PlayerM.Move.ReadValue<Vector2>();
+        if(PlayerManager.instantiate.isArriba){
+            moveI.y=0;
+        }
         rbody.velocity = moveI * speed;
         if(playerA.PlayerM.Fire.triggered) Attack();
     }
