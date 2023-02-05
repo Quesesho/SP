@@ -166,6 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165772704}
   - component: {fileID: 165772705}
+  - component: {fileID: 165772706}
   m_Layer: 0
   m_Name: "Ra\xEDz2"
   m_TagString: Untagged
@@ -240,6 +241,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &165772706
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165772703}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.73, y: 0.87}
+  m_Direction: 0
 --- !u!1 &199499513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 721829059}
   - component: {fileID: 721829060}
+  - component: {fileID: 721829061}
   m_Layer: 0
   m_Name: Corazon
   m_TagString: Untagged
@@ -1161,6 +1179,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &721829061
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721829058}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &754405214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,6 +1786,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1115488659}
   - component: {fileID: 1115488660}
+  - component: {fileID: 1115488661}
   m_Layer: 0
   m_Name: "Ra\xEDz1"
   m_TagString: Untagged
@@ -1826,6 +1861,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &1115488661
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115488658}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.91, y: 0.85}
+  m_Direction: 0
 --- !u!1 &1158890820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,6 +2029,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1428097855}
   - component: {fileID: 1428097856}
+  - component: {fileID: 1428097858}
+  - component: {fileID: 1428097857}
   m_Layer: 0
   m_Name: Hojas
   m_TagString: Untagged
@@ -2052,6 +2105,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1428097857
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428097854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.16, y: 0.025304541}
+  serializedVersion: 2
+  m_Radius: 0.25741154
+--- !u!58 &1428097858
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428097854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12, y: 0.025304541}
+  serializedVersion: 2
+  m_Radius: 0.25741154
 --- !u!1 &1442343913
 GameObject:
   m_ObjectHideFlags: 0
