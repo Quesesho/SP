@@ -27,7 +27,6 @@ public class EnemyController : MonoBehaviour
             targets = targets.transform.GetChild(0).gameObject;
         else
             targets =targets.transform.GetChild(1).gameObject;
-        Debug.Log("Nuevo enemigo ataca a "+ targets.transform.name);
         GetDestination();
     }
     void Update()
@@ -89,9 +88,12 @@ public class EnemyController : MonoBehaviour
     }
     public void GetDestination(GameObject newDestination)
     {
-        isTreeTarget = false;
+        if(zone==PlayerManager.instantiate.zone){
+            isTreeTarget = false;
         destination = newDestination;
-        Debug.Log(destination.gameObject.tag);
+        Debug.Log("Va a: "+destination.gameObject.tag);
+        }
+        
     }
     private void Attack()
     {
