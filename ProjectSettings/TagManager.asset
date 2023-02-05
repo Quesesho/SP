@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tuneles
+  - Damage1
+  - Damage2
+  - Damage3
   layers:
   - Default
   - TransparentFX
