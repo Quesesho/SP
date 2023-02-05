@@ -19,8 +19,12 @@ public class PulpomateB : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer.esCero)
+        if (timer.esCero)
+        {
             OnRoundEnd();
+            ArbolManager.instantiate.Curando();
+        }
+            
         else
             OnRoundStart();
     }
@@ -35,7 +39,6 @@ public class PulpomateB : MonoBehaviour
     public void OnRoundStart()
     {
         float step = speed * Time.deltaTime;
-
         transform.position = Vector2.MoveTowards(transform.position, posicion, step);
     }
 }

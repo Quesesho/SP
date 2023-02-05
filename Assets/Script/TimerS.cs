@@ -20,8 +20,6 @@ public class TimerS : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(timeRemaining);
-        Debug.Log(timeRD);
         if(timeRemaining > 0 && timeRD <= 0){
             esCero = false;
             timeRemaining -= Time.deltaTime;
