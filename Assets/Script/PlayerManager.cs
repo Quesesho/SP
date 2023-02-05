@@ -6,7 +6,8 @@ public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager instantiate; 
     public int vida=3;
-    public bool isArriba=true;
+    public int zone=0;
+    public bool cambiando = false;
     // Start is called before the first frame update
 private void Awake() {
     instantiate=this;

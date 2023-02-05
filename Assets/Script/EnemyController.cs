@@ -14,6 +14,10 @@ public class EnemyController : MonoBehaviour
     float distance;
     GameObject destination;
     bool isAttack = false;
+    bool isPlayerDamage = false;
+    bool isTreeDamage = false;
+    public int zone=0;
+    bool isTreeTarget = false;
 
     private void Start()
     {
@@ -28,10 +32,20 @@ public class EnemyController : MonoBehaviour
             isAttack = true;
         else isAttack = false;
         Attack();
-
-        if (Input.GetKeyDown(KeyCode.Space))
-            GetDestination();
         Dead();
+        if (isTreeTarget == false)
+        {
+            if (zone != PlayerManager.instantiate.zone)
+            {
+                GetDestination();
+                if (isPlayerDamage)
+                {
+                    CancelInvoke("HitPlayer");
+                    isPlayerDamage = false;
+                }
+            }
+
+        }
     }
     private float GetDistance()
     {
@@ -45,6 +59,7 @@ public class EnemyController : MonoBehaviour
     }
     private void GetDestination()
     {
+        isTreeTarget = true;
         int lentarg = targets.transform.childCount;
         destination = targets.transform.GetChild(Random.Range(0, lentarg)).gameObject;
         Debug.Log(destination.tag);
@@ -52,6 +67,7 @@ public class EnemyController : MonoBehaviour
     }
     public void GetDestination(GameObject newDestination)
     {
+        isTreeTarget = false;
         destination = newDestination;
         Debug.Log(destination.gameObject.tag);
     }
@@ -61,18 +77,28 @@ public class EnemyController : MonoBehaviour
         {
             if (destination.CompareTag("Player"))
             {
-                InvokeRepeating("HitPlayer",0f,.3f);
+                if (!isPlayerDamage)
+                {
+                   //Debug.Log("golpea");
+  //                  if (isTreeDamage) CancelInvoke("HitTree");
+                    InvokeRepeating("HitPlayer", 0f, speedDamage);
+                    isPlayerDamage = true;
+                }
+                    
+
             }
             if (destination.CompareTag("Arbol"))
             {
-                InvokeRepeating("HitTree", 0f, .3f);
+
+                if (!isTreeDamage)
+                {
+//                    if (isPlayerDamage) CancelInvoke("HitPlayer");
+                    InvokeRepeating("HitTree", 0f, speedDamage);
+                    isTreeDamage = true;
+                }
+                
             }
         }
-        else
-        {
-            CancelInvoke("HitPlayer");
-        }
-        
     }
     public void ReceiveDamage()
     {
@@ -85,12 +111,15 @@ public class EnemyController : MonoBehaviour
     }
     public void HitTree()
     {
-
+        ArbolManager.instantiate.SetDamage(destination.name);
     }
     private void Dead()
     {
+        
         if (vidas <= 0)
         {
+            if (isPlayerDamage) CancelInvoke("HitPlayer");
+            if (isTreeDamage) CancelInvoke("HitTree");
             Destroy(gameObject);
         }
     }

@@ -20,18 +20,29 @@ public class SpawnController : MonoBehaviour
     }
     private void SpawnEnemys()
     {
+        Debug.Log("Genera Spawn");
+        GameObject tmpGO;
         int selecEnemy = Random.Range(0, 2);
         int lenSpawn= spawns.transform.GetChild(selecEnemy).childCount;
         int selecSpawn = Random.Range(0, lenSpawn);
         if (selecEnemy == 0)
         {
-            Instantiate(escarabajo, 
-                        spawns.transform.GetChild(selecEnemy).GetChild(selecSpawn)).transform.SetParent(spawnCollection.transform);
+            tmpGO = Instantiate(escarabajo,
+                          spawns.transform.GetChild(selecEnemy).GetChild(selecSpawn));
+            EnemyController enemytmp = tmpGO.GetComponent<EnemyController>();
+            enemytmp.zone = selecEnemy;
+           tmpGO.transform.SetParent(spawnCollection.transform);
+            
         }
         else
         {
-            Instantiate(termita,
-                        spawns.transform.GetChild(selecEnemy).GetChild(selecSpawn)).transform.SetParent(spawnCollection.transform);
+            tmpGO = Instantiate(termita,
+                          spawns.transform.GetChild(selecEnemy).GetChild(selecSpawn));
+            EnemyController enemytmp = tmpGO.GetComponent<EnemyController>();
+            enemytmp.zone = selecEnemy;
+            tmpGO.transform.SetParent(spawnCollection.transform);
+            //Instantiate(termita,
+            //            spawns.transform.GetChild(selecEnemy).GetChild(selecSpawn)).transform.SetParent(spawnCollection.transform);
         }
     }
 }

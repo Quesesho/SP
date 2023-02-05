@@ -35,22 +35,42 @@ public class movep : MonoBehaviour
         else
             Debug.Log("Tiradle piedras al otaku");
     }
-
-    // Update is called once per frame
     void Update()
     {
         moveI = playerA.PlayerM.Move.ReadValue<Vector2>();
-        if(!canChange){
+        if(PlayerManager.instantiate.zone==0){
             moveI.y=0;
         }
         rbody.velocity = moveI * speed;
         if(playerA.PlayerM.Fire.triggered) Attack();
+
+        if (canChange)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (PlayerManager.instantiate.cambiando == false)
+                {
+                    if (PlayerManager.instantiate.zone == 0)
+                    {
+                        PlayerManager.instantiate.zone = 1;
+                        transform.Translate(Vector2.up*-3.0f);
+                    }
+                    else
+                    {
+                        PlayerManager.instantiate.zone = 0;
+                        transform.Translate(Vector2.up * 3.0f);
+                    }
+                    PlayerManager.instantiate.cambiando = true;
+                    Invoke("cambiandoTime", .5f);
+                }
+                
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other) {
         if(other.CompareTag("Tuneles")){
             canChange = true;
-            Debug.Log("Adentro");
         }
 
     }
@@ -60,4 +80,8 @@ public class movep : MonoBehaviour
             canChange = false;
         }
     }
+    private void cambiandoTime()
+    {
+        PlayerManager.instantiate.cambiando = false;
+    } 
 }
