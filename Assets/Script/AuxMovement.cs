@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AuxMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
     public float speed;
     public Camera mainCamera;
     private bool canChange;
@@ -12,8 +11,6 @@ public class AuxMovement : MonoBehaviour
     {
         
     }
-
-    // Update is called once per frame
     void Update()
     {
         MovementPlayer();
