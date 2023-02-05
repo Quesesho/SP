@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: animation_leon
+  m_Name: animationplayer
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -120897216, guid: 4d9441ff7546ed540a4fdfc08085c873, type: 3}
+      value: {fileID: 514337122, guid: 4d9441ff7546ed540a4fdfc08085c873, type: 3}
     - time: 0.2
       value: {fileID: -120897216, guid: 4d9441ff7546ed540a4fdfc08085c873, type: 3}
     - time: 0.4
@@ -44,7 +44,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -120897216, guid: 4d9441ff7546ed540a4fdfc08085c873, type: 3}
+    - {fileID: 514337122, guid: 4d9441ff7546ed540a4fdfc08085c873, type: 3}
     - {fileID: -120897216, guid: 4d9441ff7546ed540a4fdfc08085c873, type: 3}
     - {fileID: -650556011, guid: 4d9441ff7546ed540a4fdfc08085c873, type: 3}
   m_AnimationClipSettings:
