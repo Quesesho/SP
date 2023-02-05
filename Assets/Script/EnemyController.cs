@@ -12,18 +12,4 @@ public class EnemyController : MonoBehaviour
     {
         
     }
-<<<<<<< Updated upstream
-=======
-    private void EdoAttack()
-    {
-        Transform pos = GetDestination();
-        
-        //xpos = Mathf.Clamp();
-    }
-    private Transform GetDestination()
-    {
-        int lentarg = targets.transform.childCount;
-        return targets.transform.GetChild(Random.Range(0,lentarg));
-    }
->>>>>>> Stashed changes
 }

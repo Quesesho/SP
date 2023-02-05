@@ -21,6 +21,8 @@ public class PulpomateB : MonoBehaviour
     {
         if(timer.esCero)
             OnRoundEnd();
+        else
+            OnRoundStart();
     }
 
     public void OnRoundEnd()
