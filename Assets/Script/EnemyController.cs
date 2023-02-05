@@ -80,7 +80,7 @@ public class EnemyController : MonoBehaviour
                 if (!isPlayerDamage)
                 {
                    //Debug.Log("golpea");
-  //                  if (isTreeDamage) CancelInvoke("HitTree");
+                    if (isTreeDamage) CancelInvoke("HitTree");
                     InvokeRepeating("HitPlayer", 0f, speedDamage);
                     isPlayerDamage = true;
                 }
@@ -92,7 +92,7 @@ public class EnemyController : MonoBehaviour
 
                 if (!isTreeDamage)
                 {
-//                    if (isPlayerDamage) CancelInvoke("HitPlayer");
+                   if (isPlayerDamage) CancelInvoke("HitPlayer");
                     InvokeRepeating("HitTree", 0f, speedDamage);
                     isTreeDamage = true;
                 }
