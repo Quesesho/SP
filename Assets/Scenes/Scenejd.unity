@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 165772704}
   - component: {fileID: 165772705}
   - component: {fileID: 165772706}
+  - component: {fileID: 165772707}
   m_Layer: 0
   m_Name: "Ra\xEDz2"
   m_TagString: Untagged
@@ -257,6 +258,27 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.73, y: 0.87}
   m_Direction: 0
+--- !u!50 &165772707
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165772703}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &199499513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,6 +1127,7 @@ GameObject:
   - component: {fileID: 721829059}
   - component: {fileID: 721829060}
   - component: {fileID: 721829061}
+  - component: {fileID: 721829062}
   m_Layer: 0
   m_Name: Corazon
   m_TagString: Untagged
@@ -1195,6 +1218,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!50 &721829062
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721829058}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &754405214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,6 +1831,7 @@ GameObject:
   - component: {fileID: 1115488659}
   - component: {fileID: 1115488660}
   - component: {fileID: 1115488661}
+  - component: {fileID: 1115488662}
   m_Layer: 0
   m_Name: "Ra\xEDz1"
   m_TagString: Untagged
@@ -1877,6 +1922,27 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.91, y: 0.85}
   m_Direction: 0
+--- !u!50 &1115488662
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115488658}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &1158890820
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2097,7 @@ GameObject:
   - component: {fileID: 1428097856}
   - component: {fileID: 1428097858}
   - component: {fileID: 1428097857}
+  - component: {fileID: 1428097859}
   m_Layer: 0
   m_Name: Hojas
   m_TagString: Untagged
@@ -2137,6 +2204,27 @@ CircleCollider2D:
   m_Offset: {x: 0.12, y: 0.025304541}
   serializedVersion: 2
   m_Radius: 0.25741154
+--- !u!50 &1428097859
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428097854}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &1442343913
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,6 +2661,7 @@ GameObject:
   - component: {fileID: 1703519761}
   - component: {fileID: 1703519760}
   - component: {fileID: 1703519759}
+  - component: {fileID: 1703519762}
   m_Layer: 0
   m_Name: tronco
   m_TagString: Untagged
@@ -2673,6 +2762,27 @@ Transform:
   m_Father: {fileID: 852342899}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1703519762
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703519758}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &1817571913
 GameObject:
   m_ObjectHideFlags: 0
