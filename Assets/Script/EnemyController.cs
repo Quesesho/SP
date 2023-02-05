@@ -25,9 +25,15 @@ public class EnemyController : MonoBehaviour
     }
     void Update()
     {
-        
-        if(GetDistance()>1)
+
+        if (GetDistance() > 1)
+        {
+            if (!destination.active)
+                GetDestination(PlayerManager.instantiate.gameObject);
             MoveEnemy();
+            
+        }
+            
         if (GetDistance() > 1.2)
             isAttack = true;
         else isAttack = false;
