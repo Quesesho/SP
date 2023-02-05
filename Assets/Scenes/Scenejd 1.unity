@@ -1927,6 +1927,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 5764856934523494101, guid: fa29804577b113343afe1a32dccbf7d5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5764856934692381076, guid: fa29804577b113343afe1a32dccbf7d5, type: 3}
       propertyPath: m_Name
       value: Arbol

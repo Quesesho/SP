@@ -24,11 +24,10 @@ public class EnemyController : MonoBehaviour
     {
         
         if(isEscarabajo)
-            targets.transform.GetChild(0);
+            targets = targets.transform.GetChild(0).gameObject;
         else
-            targets.transform.GetChild(1);
-        Debug.Log("Nuevo enemigo ataca a "+ targets.transform.GetChild(0).transform.name);
-        Debug.Log("Nuevo enemigo ataca a "+ targets.transform.GetChild(1).transform.name);
+            targets =targets.transform.GetChild(1).gameObject;
+        Debug.Log("Nuevo enemigo ataca a "+ targets.transform.name);
         GetDestination();
     }
     void Update()
