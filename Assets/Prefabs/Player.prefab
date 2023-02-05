@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e1c8e8162d7ab94dbf4b904c5d7d3dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 3
+  vida: 10
   zone: 0
   cambiando: 0
 --- !u!61 &2954972485790160085

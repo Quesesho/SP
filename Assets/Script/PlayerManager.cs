@@ -12,14 +12,16 @@ public class PlayerManager : MonoBehaviour
 private void Awake() {
     instantiate=this;
 }
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        
+        IsDead();       
+    }
+    public void IsDead()
+    {
+        if (vida == 0)
+        {
+
+        }
     }
 }
