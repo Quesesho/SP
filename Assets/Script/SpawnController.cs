@@ -30,7 +30,7 @@ public class SpawnController : MonoBehaviour
         int selecSpawn = Random.Range(0, lenSpawn);
         if (selecEnemy == 0)
         {
-            tmpGO = Instantiate(escar,
+            tmpGO = Instantiate(escarabajo,
                           spawns.transform.GetChild(selecEnemy).GetChild(selecSpawn));
             EnemyController enemytmp = tmpGO.GetComponent<EnemyController>();
             enemytmp.zone = selecEnemy;
@@ -39,7 +39,7 @@ public class SpawnController : MonoBehaviour
         }
         else
         {
-            tmpGO = Instantiate(term,
+            tmpGO = Instantiate(termita,
                           spawns.transform.GetChild(selecEnemy).GetChild(selecSpawn));
             EnemyController enemytmp = tmpGO.GetComponent<EnemyController>();
             enemytmp.zone = selecEnemy;
