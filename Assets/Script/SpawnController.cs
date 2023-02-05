@@ -8,6 +8,9 @@ public class SpawnController : MonoBehaviour
     public GameObject termita;
     public GameObject escarabajo;
     public GameObject spawnCollection;
+    private GameObject term = termita;
+    private GameObject escar = escarabajo;
+    //public int tenem;
     public float offSetStart=0;
     public float timeSpawn = 1;
     void Start()
@@ -27,7 +30,7 @@ public class SpawnController : MonoBehaviour
         int selecSpawn = Random.Range(0, lenSpawn);
         if (selecEnemy == 0)
         {
-            tmpGO = Instantiate(escarabajo,
+            tmpGO = Instantiate(escar,
                           spawns.transform.GetChild(selecEnemy).GetChild(selecSpawn));
             EnemyController enemytmp = tmpGO.GetComponent<EnemyController>();
             enemytmp.zone = selecEnemy;
@@ -36,7 +39,7 @@ public class SpawnController : MonoBehaviour
         }
         else
         {
-            tmpGO = Instantiate(termita,
+            tmpGO = Instantiate(term,
                           spawns.transform.GetChild(selecEnemy).GetChild(selecSpawn));
             EnemyController enemytmp = tmpGO.GetComponent<EnemyController>();
             enemytmp.zone = selecEnemy;
