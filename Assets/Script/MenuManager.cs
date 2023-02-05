@@ -8,14 +8,6 @@ public class MenuManager : MonoBehaviour
     public GameObject mainPanel;
     public GameObject VolumePanel;
     public GameObject CreditsPanel;
-    void Start()
-    {
-        
-    }
-    void Update()
-    {
-        
-    }
     public void PlayBtn()
     {
         SceneManager.LoadScene(1);
