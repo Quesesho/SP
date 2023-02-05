@@ -23,7 +23,7 @@ public class ArbolManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        DamageUpdate();
     }
     public void SetDamage(string name)
     {
@@ -60,5 +60,49 @@ public class ArbolManager : MonoBehaviour
             healtRaiz1++;
         if (healtRaiz2 < 100)
             healtRaiz2++;
+    }
+    private void DamageUpdate()
+    {
+        if (healtTallo <= 0)
+        {
+            healtTallo = 0;
+            transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+        }
+        else
+        {
+            transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+        }
+        if (healtHojas <= 0)
+        {
+            healtHojas = 0;
+            transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
+        }
+        else
+        {
+            transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
+        }
+        if (healtCorazon <= 0)
+        {
+            transform.GetChild(1).GetChild(0).gameObject.SetActive(false);
+            PlayerManager.instantiate.isDead = true;
+        }
+        if (healtRaiz1 <= 0)
+        {
+            healtRaiz1 = 0;
+            transform.GetChild(1).GetChild(1).gameObject.SetActive(false);
+        }
+        else
+        {
+            transform.GetChild(1).GetChild(1).gameObject.SetActive(true);
+        }
+        if (healtRaiz2 <= 0)
+        {
+            healtRaiz2 = 0;
+            transform.GetChild(1).GetChild(2).gameObject.SetActive(false);
+        }
+        else
+        {
+            transform.GetChild(1).GetChild(2).gameObject.SetActive(true);
+        }
     }
 }
