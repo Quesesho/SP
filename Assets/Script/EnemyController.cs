@@ -101,6 +101,7 @@ public class EnemyController : MonoBehaviour
                    if (isPlayerDamage) CancelInvoke("HitPlayer");
                     InvokeRepeating("HitTree", 0f, speedDamage);
                     isTreeDamage = true;
+                    
                 }
                 
             }
@@ -137,4 +138,6 @@ public class EnemyController : MonoBehaviour
             ReceiveDamage();
         }
     }
+
 }
+
