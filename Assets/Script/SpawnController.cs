@@ -8,9 +8,6 @@ public class SpawnController : MonoBehaviour
     public GameObject termita;
     public GameObject escarabajo;
     public GameObject spawnCollection;
-    private GameObject term = termita;
-    private GameObject escar = escarabajo;
-    //public int tenem;
     public float offSetStart=0;
     public float timeSpawn = 1;
     void Start()
