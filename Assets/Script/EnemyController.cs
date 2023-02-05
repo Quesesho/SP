@@ -22,16 +22,19 @@ public class EnemyController : MonoBehaviour
 
     private void Start()
     {
-        GetDestination();
+        
         if(isEscarabajo)
             targets.transform.GetChild(0);
         else
-        targets.transform.GetChild(1);
+            targets.transform.GetChild(1);
+        Debug.Log("Nuevo enemigo ataca a "+ targets.transform.GetChild(0).transform.name);
+        Debug.Log("Nuevo enemigo ataca a "+ targets.transform.GetChild(1).transform.name);
+        GetDestination();
     }
     void Update()
     {
 
-        if (GetDistance() > .5)
+        if (GetDistance() > 1)
         {
             if (!destination.active)
                 GetDestination(PlayerManager.instantiate.gameObject);
@@ -39,9 +42,16 @@ public class EnemyController : MonoBehaviour
             
         }
             
-        if (GetDistance() > .6)
+        if (GetDistance() < 1.3){
             isAttack = true;
-        else isAttack = false;
+
+        }
+        else{
+            isAttack = false;
+            isPlayerDamage=false;
+            isTreeTarget=false;
+            CancelInvoke("HitPlayer");
+        } 
         Attack();
         Dead();
         if (isTreeTarget == false)
@@ -52,6 +62,7 @@ public class EnemyController : MonoBehaviour
                 if (isPlayerDamage)
                 {
                     CancelInvoke("HitPlayer");
+                    CancelInvoke("HitTree");
                     isPlayerDamage = false;
                 }
             }
@@ -61,6 +72,7 @@ public class EnemyController : MonoBehaviour
     private float GetDistance()
     {
         distance = Vector2.Distance(destination.transform.position, transform.position);
+        distance = Mathf.Abs(distance);
         return distance;
     }
     void MoveEnemy()
@@ -87,10 +99,9 @@ public class EnemyController : MonoBehaviour
         if (isAttack)
         {
             if (destination.CompareTag("Player"))
-            {
+            {           
                 if (!isPlayerDamage)
                 {
-                   //Debug.Log("golpea");
                     if (isTreeDamage) CancelInvoke("HitTree");
                     InvokeRepeating("HitPlayer", 0f, speedDamage);
                     isPlayerDamage = true;
